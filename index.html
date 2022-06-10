@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phan Huy Minh Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="5.jpg" type="image/gif" sizes="16x16">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Phan Huy Minh</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#about-cv" onclick="toggleMenu();">My CV</a></li>
+            <!-- <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu();">Testimonial</a></li> -->
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I'm <br><span>Phan Huy Minh</span></h2>
+            <h3>I'm a Junior student at Hoa Sen university at the moment</h3>
+            <h3> My major is Logistics and Supply Chain Management</h3>
+            <!-- <a href="#" class="btn">About Me</a> -->
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+            <div class="content">
+            <div class="contentBx">
+                <!-- <h3>I'm a Junior student at Hoa Sen university at the moment</h3> -->
+                <p>The first word, thank you for your question and i'm glad to introduce myself that my name is Phan Huy Minh.
+                 I'm 21 years old. I was born in Ho Chi Minh city.
+                 I am a junior student at Hoa Sen university. I am a cheerful, sociable, and active person. However, I am quite sensitive and disciplined.
+                </p>
+            </div>
+
+            <div class="w50">
+                <img src="4.JPG" class="img">
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about-cv">
+        <div class="heading">
+            <h2>My CV</h2>
+        </div>
+        <div class="content">
+            <div class="w50-1">
+                <img src="cv.png" class="img-1">
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact Me</h2>
+            <!-- <p>I'm a Front End Web Developer.</p> -->
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Ly Phu Man<br>District 7<br>Ho Chi Minh</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>0936258319</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>minh.ph9066@sinhvien.hoasen.edu.vn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Facebook</h3>
+                    <div class="qr-code">
+                        <img src="qr.jpg" class="">
+                    </div>
+                    <h5 style="color:white;">Please scan the Qr Code to concet </h5>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <!-- <p>Copyrights By Lê Hiền Triết - 2020</p> -->
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
